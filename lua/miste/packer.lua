@@ -36,6 +36,10 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},     -- Required
     }
   }
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
 
   use('tpope/vim-surround')
   use('tpope/vim-repeat')
@@ -45,6 +49,5 @@ return require('packer').startup(function(use)
   use('wellle/targets.vim')
   use('michaeljsmith/vim-indent-object')
   use('inkarkat/vim-ReplaceWithRegister')
-  use('jiangmiao/auto-pairs')
 
 end)
