@@ -24,6 +24,8 @@ vim.api.nvim_create_autocmd("FileType", {
 	end
 })
 
+vim.opt.spelllang = "en_us"
+
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "tex",
 	callback = function()
