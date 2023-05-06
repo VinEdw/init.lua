@@ -43,3 +43,10 @@ vim.opt.shellxquote = ''
 vim.opt.shellquote = ''
 vim.opt.shellredir = '-RedirectStandardOutput %s -NoNewWindow -Wait'
 vim.opt.shellpipe = '2>&1 | Out-File -Encoding UTF8 %s'
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "tex",
+	callback = function()
+    vim.keymap.set("n", "<leader>xe", ":!xelatex %:t<CR>")
+	end
+})
