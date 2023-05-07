@@ -26,3 +26,10 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.opt.spelllang = "en_us"
 vim.opt.spell = true
+
+vim.api.nvim_create_autocmd("TermOpen", {
+	callback = function()
+    vim.opt_local.spell = false
+	end
+})
+
