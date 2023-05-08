@@ -5,6 +5,7 @@ vim.keymap.set("n", "<leader>ex", vim.cmd.Ex)
 vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("n", "<leader>/", vim.cmd.noh)
 vim.keymap.set("n", "<leader>tt", vim.cmd.tabnew)
+vim.keymap.set("n", "<leader>tm", ":tabnew | term<CR>")
 
 vim.keymap.set("n", "f", "<Plug>Sneak_f")
 vim.keymap.set("n", "F", "<Plug>Sneak_F")
