@@ -38,6 +38,8 @@ vim.keymap.set("t", "<A-k>", "<C-\\><C-N><C-w>k")
 vim.keymap.set("t", "<A-l>", "<C-\\><C-N><C-w>l")
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set("t", "jk", "<C-\\><C-n>")
+vim.keymap.set("t", "gt", "<C-\\><C-n>gt")
+vim.keymap.set("t", "gT", "<C-\\><C-n>gT")
 vim.cmd(":tnoremap <expr> <C-R> '<C-\\><C-N>\"'.nr2char(getchar()).'pi'")
 
 vim.api.nvim_create_autocmd("FileType", {
