@@ -43,8 +43,16 @@ vim.keymap.set("t", "gT", "<C-\\><C-n>gT")
 vim.cmd(":tnoremap <expr> <C-R> '<C-\\><C-N>\"'.nr2char(getchar()).'pi'")
 
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "tex",
-	callback = function()
+  pattern = "tex",
+  callback = function()
     vim.keymap.set("n", "<leader>xe", ":!xelatex %:t<CR>")
-	end
+  end
 })
+
+vim.keymap.set("n", "<leader><>", function ()
+  local old_val = vim.opt.tabstop:get()
+  local new_val = 6 - old_val
+  vim.opt.tabstop = new_val
+  vim.opt.softtabstop = new_val
+  vim.opt.shiftwidth = new_val
+end)
