@@ -1,16 +1,21 @@
+-- Set relative line numbers, with the current absolute line shown
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+-- Set 2 space indentation by default
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
+-- Use smart indentation when starting a new line
 vim.opt.smartindent = true
 
+-- Ignore case for searches in all lowercase, but consider case when uppercase is used
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- Set line wrapping
 vim.opt.breakindent = true
 vim.opt.breakindentopt = {'shift:2', 'min:40', 'sbr'}
 vim.opt.showbreak = ">>"
@@ -24,6 +29,8 @@ if (vim.loop.os_uname().sysname:find 'Windows' and true or false) then
   vim.opt.shellredir = '-RedirectStandardOutput %s -NoNewWindow -Wait'
   vim.opt.shellpipe = '2>&1 | Out-File -Encoding UTF8 %s'
 end
+
+-- Set 4 space indentation for Python files
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "py",
 	callback = function()
@@ -33,9 +40,11 @@ vim.api.nvim_create_autocmd("FileType", {
 	end
 })
 
+-- Turn on spell checking
 vim.opt.spelllang = "en_us"
 vim.opt.spell = true
 
+-- Turn off spell checking for the terminal emulator
 vim.api.nvim_create_autocmd("TermOpen", {
 	callback = function()
     vim.opt_local.spell = false
