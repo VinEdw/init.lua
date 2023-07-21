@@ -1,6 +1,7 @@
 -- Use the other files in this directory
 require("miste.set")
 require("miste.remap")
+require("miste.packer")
 
 -- Use the onedark darker theme
 require('onedark').setup {
