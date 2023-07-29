@@ -32,12 +32,12 @@ end
 
 -- Set 4 space indentation for Python files
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "py",
-	callback = function()
-		vim.opt_local.tabstop = 4
+  pattern = "py",
+  callback = function()
+    vim.opt_local.tabstop = 4
     vim.opt_local.softtabstop = 4
-		vim.opt_local.shiftwidth = 4
-	end
+    vim.opt_local.shiftwidth = 4
+  end
 })
 
 -- Turn on spell checking
@@ -46,7 +46,7 @@ vim.opt.spell = true
 
 -- Turn off spell checking for the terminal emulator
 vim.api.nvim_create_autocmd("TermOpen", {
-	callback = function()
+  callback = function()
     vim.opt_local.spell = false
-	end
+  end
 })
