@@ -41,6 +41,8 @@ return require('packer').startup(function(use)
     config = function() require("nvim-autopairs").setup {} end
   }
 
+  use {'kaarmu/typst.vim', ft = {'typst'}}
+
   use('tpope/vim-surround')
   use('tpope/vim-repeat')
   use('tpope/vim-commentary')
