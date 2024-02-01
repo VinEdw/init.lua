@@ -19,6 +19,7 @@ vim.opt.smartcase = true
 vim.opt.breakindent = true
 vim.opt.breakindentopt = {'shift:2', 'min:40', 'sbr'}
 vim.opt.showbreak = ">>"
+vim.opt.linebreak = true
 
 -- If the OS is Windows, then set Powershell for the terminal emulator
 if (vim.loop.os_uname().sysname:find 'Windows' and true or false) then
