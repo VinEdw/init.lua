@@ -1,6 +1,7 @@
 -- Set relative line numbers, with the current absolute line shown
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.g.netrw_bufsettings = "noma nomod nu rnu nowrap ro nobl"
 
 -- Set 2 space indentation by default
 vim.opt.tabstop = 2
