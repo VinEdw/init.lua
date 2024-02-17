@@ -24,10 +24,10 @@ vim.keymap.set("n", "Y", "y$")
 vim.keymap.set("n", "<leader>k", "\"_")
 vim.keymap.set("v", "<leader>k", "\"_")
 -- Use the system clipboard register
-vim.keymap.set("n", "<leader>s", "\"*")
-vim.keymap.set("v", "<leader>s", "\"*")
+vim.keymap.set("n", "<leader>s", "\"+")
+vim.keymap.set("v", "<leader>s", "\"+")
 -- Copy the current line to the system clipboard
-vim.keymap.set("n", "<leader>j", "\"*yy")
+vim.keymap.set("n", "<leader>j", "\"+yy")
 
 -- Create a new line above or below the current line
 vim.keymap.set("n", "<leader>o", "o<Esc>")
