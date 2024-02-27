@@ -10,7 +10,9 @@ require'nvim-treesitter.configs'.setup {
                        "vimdoc",
                        "gitcommit",
                        "diff",
-                       "yaml"
+                       "yaml",
+                       "markdown",
+                       "markdown_inline",
                      },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
