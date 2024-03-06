@@ -29,10 +29,6 @@ vim.keymap.set("v", "<leader>s", "\"+")
 -- Copy the current line to the system clipboard
 vim.keymap.set("n", "<leader>j", "\"+yy")
 
--- Create a new line above or below the current line
-vim.keymap.set("n", "<leader>o", "o<Esc>")
-vim.keymap.set("n", "<leader>O", "O<Esc>")
-
 -- Navigate splits/windows with Alt hjkl
 -- Normal mode
 vim.keymap.set("n", "<A-h>", "<C-w>h")
