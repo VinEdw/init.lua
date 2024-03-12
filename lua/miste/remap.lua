@@ -54,14 +54,6 @@ vim.keymap.set("t", "gT", "<C-\\><C-n>gT")
 -- Use registers in the terminal with <C-R>
 vim.cmd(":tnoremap <expr> <C-R> '<C-\\><C-N>\"'.nr2char(getchar()).'pi'")
 
--- Command to render LaTeX files with XeLaTeX
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "tex",
-  callback = function()
-    vim.keymap.set("n", "<leader>xe", ":!xelatex %:t<CR>")
-  end
-})
-
 -- Command to toggle between 2 space and 4 space indentation preferences
 -- Note: Does not impact the current indentation of the file
 vim.keymap.set("n", "<leader><>", function ()
