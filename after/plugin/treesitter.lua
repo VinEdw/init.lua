@@ -13,6 +13,7 @@ require'nvim-treesitter.configs'.setup {
                        "yaml",
                        "markdown",
                        "markdown_inline",
+                       "cpp",
                      },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
