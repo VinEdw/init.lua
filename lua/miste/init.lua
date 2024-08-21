@@ -21,7 +21,7 @@ require("lazy").setup({
   -- Onedark editor theme
   {
     "navarasu/onedark.nvim",
-    opts = { style = "darker" },
+    opts = { style = "warmer" },
     config = function(_, opts)
       require("onedark").setup(opts)
       require("onedark").load()
