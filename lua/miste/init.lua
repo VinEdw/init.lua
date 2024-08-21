@@ -18,13 +18,22 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Install plugins
 require("lazy").setup({
-  -- Onedark editor theme
+  -- Catppuccin editor theme
   {
-    "navarasu/onedark.nvim",
-    opts = { style = "warmer" },
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {
+      flavour = "mocha",
+      color_overrides = {
+        mocha = {
+          base = "#000000",
+        }
+      }
+    },
     config = function(_, opts)
-      require("onedark").setup(opts)
-      require("onedark").load()
+      require("catppuccin").setup(opts)
+      vim.cmd.colorscheme("catppuccin")
     end,
   },
 
