@@ -1,8 +1,6 @@
 -- Leader key set to space
 vim.g.mapleader = " "
 
--- Open netrw file explorer
-vim.keymap.set("n", "<leader>ex", vim.cmd.Ex)
 -- Escape insert mode
 vim.keymap.set("i", "jk", "<Esc>")
 -- Turn off search highlighting
