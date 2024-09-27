@@ -55,3 +55,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
     vim.opt_local.spell = false
   end
 })
+
+-- Keep the sign column on
+vim.opt.signcolumn = "yes"
