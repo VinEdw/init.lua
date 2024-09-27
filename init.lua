@@ -19,11 +19,3 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Install plugins
 require("lazy").setup("plugins")
-
--- Flash a highlight on yank
-vim.cmd[[
-augroup highlight_yank
-autocmd!
-au TextYankPost * silent! lua vim.highlight.on_yank({higroup="IncSearch", timeout=150})
-augroup END
-]]
