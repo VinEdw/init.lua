@@ -12,12 +12,6 @@ vim.keymap.set("n", "<leader>tm", ":tabnew | term<CR>")
 -- Open the buffer list and prepare to select one
 vim.keymap.set("n", "<leader>b", ":buffers<CR>:b ")
 
--- Use vim-sneak's versions of f, F, t, & T
-vim.keymap.set("n", "f", "<Plug>Sneak_f")
-vim.keymap.set("n", "F", "<Plug>Sneak_F")
-vim.keymap.set("n", "t", "<Plug>Sneak_t")
-vim.keymap.set("n", "T", "<Plug>Sneak_T")
-
 -- Make Y yank to the end of the line
 vim.keymap.set("n", "Y", "y$")
 -- Use the black hole register
