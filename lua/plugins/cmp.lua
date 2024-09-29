@@ -12,8 +12,12 @@ return {
         {name = 'nvim_lsp'},
       },
       mapping = cmp.mapping.preset.insert({
-        -- Enter key confirms completion item
-        ['<CR>'] = cmp.mapping.confirm({select = false}),
+        -- Navigate between completion items
+        ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = 'select' }),
+        ['<C-n>'] = cmp.mapping.select_next_item({ behavior = 'select' }),
+
+        -- Confirm completion
+        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
 
         -- Ctrl + space triggers completion menu
         ['<C-Space>'] = cmp.mapping.complete(),
