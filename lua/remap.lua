@@ -15,11 +15,9 @@ vim.keymap.set("n", "<leader>b", ":buffers<CR>:b ")
 -- Make Y yank to the end of the line
 vim.keymap.set("n", "Y", "y$")
 -- Use the black hole register
-vim.keymap.set("n", "<leader>k", "\"_")
-vim.keymap.set("v", "<leader>k", "\"_")
+vim.keymap.set({ "n", "v" }, "<leader>k", "\"_")
 -- Use the system clipboard register
-vim.keymap.set("n", "<leader>s", "\"+")
-vim.keymap.set("v", "<leader>s", "\"+")
+vim.keymap.set({ "n", "v" }, "<leader>s", "\"+")
 -- Copy the current line to the system clipboard
 vim.keymap.set("n", "<leader>j", "\"+yy")
 
