@@ -35,7 +35,7 @@ vim.keymap.set("t", "<A-l>", "<C-\\><C-N><C-w>l")
 
 -- Escape and switch tabs in terminal mode
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
-vim.keymap.set("t", "jk", "<C-\\><C-n>")
+-- vim.keymap.set("t", "jk", "<C-\\><C-n>")
 vim.keymap.set("t", "gt", "<C-\\><C-n>gt")
 vim.keymap.set("t", "gT", "<C-\\><C-n>gT")
 -- Use registers in the terminal with <C-R>
