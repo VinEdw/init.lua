@@ -5,5 +5,4 @@ return {
   "tpope/vim-fugitive",
   "wellle/targets.vim",
   "michaeljsmith/vim-indent-object",
-  "inkarkat/vim-ReplaceWithRegister",
 }
