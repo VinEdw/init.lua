@@ -6,4 +6,5 @@ return {
   "tpope/vim-vinegar",
   "wellle/targets.vim",
   "michaeljsmith/vim-indent-object",
+  "godlygeek/tabular",
 }
