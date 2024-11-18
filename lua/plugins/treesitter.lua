@@ -21,6 +21,7 @@ return {
         "markdown_inline",
         "cpp",
         "awk",
+        "ruby",
       },
 
       -- Install parsers synchronously (only applied to `ensure_installed`)
