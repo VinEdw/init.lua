@@ -10,7 +10,6 @@ return {
         "css",
         "json",
         "python",
-        "latex",
         "lua",
         "vim",
         "vimdoc",
