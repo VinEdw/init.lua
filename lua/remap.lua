@@ -50,3 +50,6 @@ vim.keymap.set("n", "<leader><>", function ()
   vim.opt.softtabstop = new_val
   vim.opt.shiftwidth = new_val
 end)
+
+-- Command to toggle replace [“”] with " and ’ with '
+vim.keymap.set("n", "<leader>\"", ":%s/[“”]/\"/ge | %s/’/'/ge<CR><C-o>")
