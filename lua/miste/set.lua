@@ -35,9 +35,9 @@ if (vim.loop.os_uname().sysname:find 'Windows' and true or false) then
   vim.opt.shellpipe = '2>&1 | Out-File -Encoding UTF8 %s'
 end
 
--- Set 4 space indentation for Python files
+-- Set 4 space indentation for Python and Julia files
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "py",
+  pattern = { "python", "julia" },
   callback = function()
     vim.opt_local.tabstop = 4
     vim.opt_local.softtabstop = 4
