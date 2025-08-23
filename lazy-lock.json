@@ -3,6 +3,7 @@
   "catppuccin": { "branch": "main", "commit": "30fa4d122d9b22ad8b2e0ab1b533c8c26c4dde86" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "bd5a7d6db125d4654b50eeae9f5217f24bb22fd3" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "leap.nvim": { "branch": "main", "commit": "8b03b5d62d11cd9da5ea8be62ab8e9ff3fabab8f" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "1ec4da522fa49dcecee8d190efda273464dd2192" },
   "mason.nvim": { "branch": "main", "commit": "7dc4facca9702f95353d5a1f87daf23d78e31c2a" },
   "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },
@@ -19,6 +20,5 @@
   "vim-indent-object": { "branch": "master", "commit": "8ab36d5ec2a3a60468437a95e142ce994df598c6" },
   "vim-mma": { "branch": "master", "commit": "77b8fed1a4b61d4e78fe4a49656f37ff51e4db90" },
   "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },
-  "vim-sneak": { "branch": "master", "commit": "18b1faf020e6a66c1ce09b3ff5e6b6feb182973b" },
   "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" }
 }
