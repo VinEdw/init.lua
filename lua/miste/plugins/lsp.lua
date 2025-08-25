@@ -50,7 +50,8 @@ return {
       },
     })
 
-    vim.lsp.enable("julials")
+    vim.lsp.config('julials', {})
+    vim.lsp.enable('julials')
 
   end,
 }
