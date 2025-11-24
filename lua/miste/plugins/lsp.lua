@@ -80,6 +80,11 @@ return {
     -- https://github.com/Myriad-Dreamin/tinymist/releases
     vim.lsp.enable('tinymist')
 
+    -- npm install -g vscode-langservers-extracted
+    -- npm install -g @olrtg/emmet-language-server
+    vim.lsp.enable('html')
+    vim.lsp.enable('cssls')
+    vim.lsp.enable('emmet_language_server')
     -- npm install -g typescript-language-server typescript
     vim.lsp.enable('ts_ls')
 
