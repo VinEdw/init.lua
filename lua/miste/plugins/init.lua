@@ -5,6 +5,5 @@ return {
   "tpope/vim-fugitive",
   "wellle/targets.vim",
   "michaeljsmith/vim-indent-object",
-  "godlygeek/tabular",
   "voldikss/vim-mma",
 }
