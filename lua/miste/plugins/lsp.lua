@@ -28,6 +28,9 @@ return {
     -- Enable the desired language servers
     -- Included is a short note on how to install each
 
+    -- npm install -g awk-language-server
+    vim.lsp.enable('awk_ls')
+
     -- dnf install clang clang-tools-extra
     vim.lsp.enable('clangd')
 
