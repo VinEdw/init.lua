@@ -3,6 +3,5 @@ return {
   "tpope/vim-repeat",
   "tpope/vim-commentary",
   "tpope/vim-fugitive",
-  "wellle/targets.vim",
   "michaeljsmith/vim-indent-object",
 }
