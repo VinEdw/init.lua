@@ -51,5 +51,5 @@ vim.keymap.set("n", "<leader><>", function ()
   vim.opt.shiftwidth = new_val
 end)
 
--- Command to toggle replace [“”] with " and ’ with '
+-- Command to replace [“”] with " and ’ with '
 vim.keymap.set("n", "<leader>\"", ":%s/[“”]/\"/ge | %s/’/'/ge<CR>")
