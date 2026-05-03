@@ -52,4 +52,4 @@ vim.keymap.set("n", "<leader><>", function ()
 end)
 
 -- Command to toggle replace [“”] with " and ’ with '
-vim.keymap.set("n", "<leader>\"", ":%s/[“”]/\"/ge | %s/’/'/ge<CR><C-o>")
+vim.keymap.set("n", "<leader>\"", ":%s/[“”]/\"/ge | %s/’/'/ge<CR>")
