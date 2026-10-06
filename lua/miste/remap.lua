@@ -9,8 +9,6 @@ vim.keymap.set("n", "<leader>/", vim.cmd.noh)
 vim.keymap.set("n", "<leader>tt", vim.cmd.tabnew)
 -- Open the terminal emulator in a new tab
 vim.keymap.set("n", "<leader>tm", ":tabnew | term<CR>")
--- Open the buffer list and prepare to select one
-vim.keymap.set("n", "<leader>b", ":buffers<CR>:b ")
 
 -- Make Y yank to the end of the line
 vim.keymap.set("n", "Y", "y$")
